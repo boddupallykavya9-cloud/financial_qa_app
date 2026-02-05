@@ -50,3 +50,12 @@ This ensures:
 ---
 
 ## 📁 Project Structure
+financial_qa_app/
+│
+├── app.py
+├── utils/
+│   ├── document_processing.py
+│   ├── answer_router.py
+│   └── ollama_integration.py
+├── requirements.txt
+└── README.md
