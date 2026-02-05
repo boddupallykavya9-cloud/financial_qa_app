@@ -91,5 +91,53 @@ financial_qa_app/
 git clone <your-repo-url>
 cd financial_qa_app
 ---
----
+```
 ### 2️⃣ Create & activate virtual environment
+```bash
+python -m venv venv
+```
+#### windows
+```bash
+venv\Scripts\activate
+```
+#### macOS / Linux
+```bash
+source venv/bin/activate
+```
+### 3️⃣ Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Install & start Ollama
+Download from: https://ollama.com�
+Pull a model:
+Copy code
+Bash
+ollama pull phi3:mini
+Start Ollama (runs in background):
+Copy code
+Bash
+ollama serve
+5️⃣ Run the Streamlit app
+Copy code
+Bash
+streamlit run app.py
+🔐 Accuracy & Safety
+All financial numbers come directly from uploaded documents
+The LLM never generates or guesses numeric values
+If information is missing, the system explicitly states so
+📌 Limitations
+Excel files provide the highest accuracy
+PDF files rely on text extraction and are used mainly for explanations
+Complex or poorly structured PDFs may reduce precision
+🔮 Future Improvements
+Financial ratio analysis (e.g., debt-to-equity)
+Multi-document support
+Export chat as PDF or report
+Highlighted data citations
+Streaming responses
+📜 License
+This project is intended for educational and portfolio use.
+🙌 Author
+Built by [Your Name]
