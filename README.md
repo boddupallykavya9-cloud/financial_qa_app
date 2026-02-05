@@ -59,3 +59,37 @@ financial_qa_app/
 │   └── ollama_integration.py
 ├── requirements.txt
 └── README.md
+
+---
+
+## 🚀 How It Works
+
+1. Upload a financial document (Excel or PDF)
+2. Excel files are parsed into structured Python dictionaries
+3. Ask questions using a chat interface
+4. The system routes questions automatically:
+   - **Numeric / factual → Python (instant & exact)**
+   - **Explanatory / follow-up → Ollama**
+5. Previous answers remain visible and are used for conversational context
+
+---
+
+## 📊 Example Questions
+
+- What are the total assets for 2023?
+- What are the total liabilities for 2022?
+- Compare assets and liabilities
+- Why is this important?
+- Explain the financial position in simple terms
+
+---
+
+## 🧪 Running the App Locally
+
+### 1️⃣ Clone the repository
+```bash
+git clone <your-repo-url>
+cd financial_qa_app
+---
+
+### 2️⃣ Create & activate virtual environment
