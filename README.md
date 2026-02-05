@@ -91,5 +91,5 @@ financial_qa_app/
 git clone <your-repo-url>
 cd financial_qa_app
 ---
-
+---
 ### 2️⃣ Create & activate virtual environment
